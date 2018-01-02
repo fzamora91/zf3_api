@@ -16,23 +16,6 @@ return [
     ],
     'router' => [
         'routes' => [
-            'foo' => [
-                'type'    => Segment::class,
-                'options' => [
-                    // Change this to something specific to your module
-                    'route'    => '/foo[/:action]',
-                    'defaults' => [
-                        'controller'    => Controller\FooController::class,
-                        'action'        => 'bar',
-                        //'isAuthorizationRequired' => true
-                    ],
-                ],
-                'may_terminate' => true,
-                'child_routes' => [
-                    // You can place additional routes that match under the
-                    // route defined above here.
-                ],
-            ],
             'usuarios' => [
                 'type'    => Segment::class,
                 'options' => [
